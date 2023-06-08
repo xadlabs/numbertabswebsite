@@ -1,0 +1,100 @@
+.slider {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1170px;
+    max-height: 700px;
+    margin-top: 30px;
+}
+
+.slider>img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    transition: transform .5s;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.slider>img.left,
+.slider>img.center,
+.slider>img.right {
+    display: inline-block;
+}
+
+.slider>img.left {
+    transform: translate(-90%, -50%);
+    z-index: 1;
+}
+
+.slider>img.center {
+    z-index: 2;
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+}
+
+.slider>img.right {
+    transform: translate(-10%, -50%);
+    z-index: 1;
+}
+
+.slider>.navContainer:first-child{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    margin-right: -4px;
+    z-index: 500;
+    left: -25%;
+}
+
+.slider>.navContainer:last-child{
+	width: 75%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    margin-right: -4px;
+    z-index: 500;
+    right: -25%;
+}
+
+.slider>.navContainer>.leftClass,
+.slider>.navContainer>.rightClass {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+	color: #fff;
+}
+
+.slider>.navContainer>.leftClass:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 110px;
+    height: 1px;
+    background: #fff;
+}
+
+.slider>.navContainer>.rightClass:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 110px;
+    height: 1px;
+    background: #fff;
+}
+
+.slider>.navContainer>.rightClass {
+    right: 0;
+    text-align: right;
+}
+
+.slider>.navContainer>.leftClass {
+    left: 0;
+}
