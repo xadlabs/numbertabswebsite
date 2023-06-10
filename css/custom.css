@@ -1210,7 +1210,7 @@ a:focus {
 /************************************/
 
 footer.footer {
-  padding: 100px 0;
+  padding: 10px 0;
   background: #f6f9ff;
 }
 
@@ -1220,7 +1220,7 @@ footer.footer {
 
 .footer-social-links {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .footer-social-links a {
@@ -1236,7 +1236,7 @@ footer.footer {
 }
 
 .footer-single {
-  margin-top: 60px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -1248,7 +1248,7 @@ footer.footer {
 }
 
 .footer-single p {
-  color: #92939e;
+  color: #2e2e30;
   font-size: 14px;
   line-height: 1.5em;
 }
