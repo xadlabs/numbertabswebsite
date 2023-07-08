@@ -1139,7 +1139,7 @@ a:focus {
 
 .download-apps {
   padding: 100px 0 50px;
-  background: linear-gradient(to top, #fff 33%, #f6f9ff 33%);
+  /* background: linear-gradient(to top, #fff 33%, #f6f9ff 33%); */
 }
 
 .download-apps .section-title {
