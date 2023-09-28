@@ -77,11 +77,14 @@
             <div class="contact-form">
               <form
                 method="POST"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
+                action="https://api.web3forms.com/submit"
                 id="contact"
               >
-                <input style="display: none" name="bot-field" />
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="7f5ca336-8e4a-458f-8fea-25377b8cafee"
+                />
                 <div class="row">
                   <div class="form-group col-md-12 col-sm-12">
                     <input
